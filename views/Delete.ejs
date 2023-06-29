@@ -1,0 +1,170 @@
+<%- include("partial/adminheader"); %>
+
+<center class="heading">
+<h1>Delete Images</h1>
+<div class="hr"></div>
+</center>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Wedding')">Wedding</button>
+  <button class="tablinks" onclick="openCity(event, 'Puberty')">Puberty</button>
+  <button class="tablinks" onclick="openCity(event, 'Family')">Family</button>
+  <button class="tablinks" onclick="openCity(event, 'Function')">Function</button>
+  <button class="tablinks" onclick="openCity(event, 'BabyPhoto')">BabyPhoto</button>
+  <button class="tablinks" onclick="openCity(event, 'Personal')">Personal</button>
+  <button class="tablinks" onclick="openCity(event, 'Birthday')">Birthday</button>
+  <button class="tablinks" onclick="openCity(event, 'Others')">Others</button>
+</div>
+
+
+<div id="Wedding" class="tabcontent">
+  <center class="heading">
+  <h1>Wedding</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+    <div class="scroll">
+      <%pic.forEach(function(image){
+        if(image.fields==="wedding"){%>
+        <form  action="/Delete" method="post">
+        <div class="box">
+        <input class="checkbox" type="checkbox" name="checkbox" value="<%=image._id %>" onchange="this.form.submit()"/>
+        <img src="<%=image.url%>" height="200px" width="400px">
+        </div>
+    </form>
+    <%}})%>
+    </div>
+    </div>
+    <br />
+<center>
+<button class="btnn" type="submit" name="submit">Delete</button>
+</center>
+  </div>
+
+<div id="Puberty" class="tabcontent">
+  <center class="heading">
+  <h1>Puberty</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="puberty"){%>
+    <div class="box">
+  <img src="<%=image.url%>" height="200px" width="400px">
+  </div>
+  <%}})%>
+  </div>
+  </div>
+
+
+
+<div id="Family" class="tabcontent">
+  <center class="heading">
+  <h1>Family</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="family"){%>
+    <div class="box">
+<img src="<%=image.url%>" height="200px" width="400px">
+</div>
+<%}})%>
+</div>
+</div>
+
+<div id="Function" class="tabcontent">
+  <center class="heading">
+  <h1>Function</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="functions"){%>
+    <div class="box">
+  <img src="<%=image.url%>" height="200px" width="400px">
+  </div>
+  <%}})%>
+  </div>
+</div>
+
+<div id="BabyPhoto" class="tabcontent">
+  <center class="heading">
+  <h1>BabyPhoto</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="baby"){%>
+    <div class="box">
+  <img src="<%=image.url%>" height="200px" width="400px">
+  </div>
+  <%}})%>
+  </div>
+</div>
+
+<div id="Personal" class="tabcontent">
+  <center class="heading">
+  <h1>Personal</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="personal"){%>
+    <div class="box">
+  <img src="<%=image.url%>" height="200px" width="400px">
+  </div>
+  <%}})%>
+  </div>
+</div>
+
+<div id="Birthday" class="tabcontent">
+  <center class="heading">
+  <h1>Birthday</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="birthday"){%>
+    <div class="box">
+  <img src="<%=image.url%>" height="200px" width="400px">
+  </div>
+  <%}})%>
+  </div>
+</div>
+
+<div id="Others" class="tabcontent">
+  <center class="heading">
+  <h1>Others</h1>
+  <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+  <%pic.forEach(function(image){
+    if(image.fields==="other"){%>
+    <div class="box">
+  <img src="<%=image.url%>" height="200px" width="400px">
+  </div>
+  <%}})%>
+  </div>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<%- include("partial/adminfooter"); %>

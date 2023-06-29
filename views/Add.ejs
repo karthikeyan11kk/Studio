@@ -1,0 +1,48 @@
+<%- include("partial/adminheader"); %>
+
+<center class="heading">
+<h1>Add Images</h1>
+<div class="hr"></div>
+</center>
+<div class="card">
+  <div class="card-body">
+    <form class="Cform" action="/Add" method="post" enctype="multipart/form-data">
+
+      <table>
+        <tr>
+          <td>
+            <label for="addfield"><h3>Add In</h3></label>
+          </td>
+          <td>
+            <select id="book" name="addfield">
+              <option value="wedding">Wedding</option>
+              <option value="functions">Function</option>
+              <option value="puberty">Puberty</option>
+              <option value="family">Family</option>
+              <option value="baby">Baby Photoshoot</option>
+              <option value="personal">Personal Photoshoot</option>
+              <option value="birthday">Birthday/Party</option>
+              <option value="other">Others</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pic">
+              <h3>Choose The Picture</h3>
+            </label>
+          </td>
+          <td>
+              <input type="file" name="pic">
+          </td>
+        </tr>
+      </table>
+      <br />
+      <span class="error"></span>
+<center>
+<button class="btn" type="submit" name="submit">Add</button>
+</center>
+</form>
+  </div>
+</div>
+<%- include("partial/adminfooter"); %>

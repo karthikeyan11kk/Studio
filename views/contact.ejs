@@ -1,0 +1,105 @@
+<%- include("partial/header"); %>
+<div class="introcontact">
+  <div class="intro">
+    <h1 class="quote">SOME CAPTURED MOMENTS ARE WORTH A THOUSAND MEMORIES, ONLY IF YOU SEE IT !</h1>
+  </div>
+</div>
+<section id="Contact">
+  <center>
+    <h1>Contact</h1>
+    <div class="hr"></div>
+  </center>
+
+  <div class="contactform">
+        <div class="card">
+          <div class="card-body">
+            <form class="Cform" action="/contact" method="post">
+              <table>
+                <tr>
+                  <td>
+                    <label for="name">
+                      <h3>Name</h3>
+                    </label><hr />
+                  </td>
+                  <td>
+                      <input type="text" name="name">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="email">
+                      <h3>Email</h3>
+                    </label><hr />
+                  </td>
+                  <td>
+                      <input type="text" name="email">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="phoneno">
+                      <h3>Phone Number</h3>
+                    </label>
+                    <hr />
+                  </td>
+                  <td>
+                      <input type="text" name="phoneno">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="book"><h3>Book For</h3></label><hr />
+                  </td>
+                  <td>
+                    <select id="book" name="book">
+                      <option value="wedding">Wedding</option>
+                      <option value="functions">Function</option>
+                      <option value="puberty">Puberty</option>
+                      <option value="family">Family</option>
+                      <option value="baby">Baby Photoshoot</option>
+                      <option value="personal">Personal Photoshoot</option>
+                      <option value="birthday">Birthday/Party</option>
+                      <option value="other">Others</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label for="address"><h3>Address</h3></label><br><hr />
+                  </td>
+                  <td>
+                      <textarea type="text" name="address"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <label for="message"><h3>Message</h3></label><br><hr />
+                  </td>
+                  <td>
+                      <textarea type="text" name="message"></textarea>
+                  </td>
+                </tr>
+              </table>
+              <br />
+              <span class="error"></span>
+<center>
+  <button class="btn" type="submit" name="submit">Book</button>
+</center>
+            </form>
+          </div>
+    </div>
+    <div class="gridimage">
+        <div class="box i1">1</div>
+        <div class="box i2">2</div>
+        <div class="box i3">3</div>
+        <div class="box i4">4 </div>
+        <div class="box i5">5</div>
+      </div>
+    </div>
+
+
+
+
+
+</section>
+<%- include("partial/footer"); %>

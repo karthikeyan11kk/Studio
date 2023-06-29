@@ -1,0 +1,173 @@
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+.navbar-toggler {
+  text-align: center;
+  background-color: #FFEA20;
+}
+.nav-link {
+  text-align: center;
+  color: #FFEA20;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+}
+.nav-link:hover {
+  color: #FFD717;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.introhome {
+  position: relative;
+  background: url("../img/menuimg/menu.png") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.introabout {
+  position: relative;
+  background: url("../img/menuimg/about.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.introcontact {
+  position: relative;
+  background: url("../img/menuimg/contact.jpg") no-repeat center;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.intro h1 {
+  color: white;
+  margin: 0;
+  border: 10px solid white;
+  padding: 10px;
+  display: inline-block;
+  font-family: 'Bebas Neue', sans-serif;
+}
+.hr {
+  width: 280px;
+  border-top: 10px solid #FFEA20;
+  border-bottom: none;
+}
+.wedding{
+  margin-left: 10px;
+}
+.container-wedding{
+  margin:50px 50px;
+}
+.dd{
+  width:200px;
+  border-width: 5px;
+}
+.link1{
+  color: white;
+  line-height: 2;
+}
+.link{
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+}
+.link:hover{
+  color: grey;
+}
+.logo{
+  font-size: 1rem;
+  display:flex;
+}
+#footer{
+  background-color: #FFC93C;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+  padding:2% 2% 2% 5%;
+  position: relative;
+  background-size: cover;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.column{
+  margin-right: 100px;
+}
+ .img{
+  margin-top: -10px;
+}
+.contactform{
+  display:contents;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  border: 3px solid #FFEA20;
+  margin: auto;
+  margin-top: 80px;
+  border-radius: 50px;
+  max-width:1000px;
+  width:100%;
+  padding: 40px 100px;
+  text-align: left;
+}
+input,select,textarea{
+  width: 350px;
+  border-radius:50px;
+  color: black;
+  margin-left: 20px;
+  background-color:inherit;
+  padding: 7px 5px 7px 12px;
+  outline: none;
+  border: 2px solid  #FFEA20;
+}
+textarea{
+  width: 500px;
+  height: 50px;
+  border-radius:20px;
+}
+td{
+  padding-bottom: 10px;
+}
+
+hr{
+  margin-top:-15px;
+  width: 150px;
+  height: 5px;
+  border-top: none;
+}
+.btn{
+  border-radius:50px;
+  width: 200px;
+  background-color: #FFEA20;
+  color:white;
+  margin-top: 30px;
+  outline: none;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover{
+  border-radius:50px;
+  background-color: white;
+  color:#FFEA20;
+  border: 1px solid #FFEA20;
+}
+.thanks{
+  padding:100px;
+  justify-content: center;
+  align-items: center;
+}
+h4 a{
+  text-decoration: none;
+  color:#FFEA20;
+}

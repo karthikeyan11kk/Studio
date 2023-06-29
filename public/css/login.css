@@ -1,0 +1,64 @@
+@media  screen and (max-width: 600px) {
+
+}
+
+body{
+  font-family: 'Lexend Deca', sans-serif;
+  background-image:url("../img/menuimg/camera.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+  margin-bottom:40px;
+  color:#FFEA20;
+}
+h3{
+  margin-top:20px;
+  color: #FFEA20;
+}
+hr{
+  margin-top:-5px;
+  width: 150px;
+  height: 15px;
+  background-color:#FFEA20;
+  border-top: none;
+}
+input{
+  width: 350px;
+  border-radius:50px;
+  color:  #FFEA20;
+  background-color:inherit;
+  padding: 5px 5px 5px 12px;
+  outline: none;
+  border: 5px solid  #FFEA20;
+  margin-bottom: 10px;
+}
+.card
+{
+  border: 8px solid #FFEA20;
+  margin: auto;
+  border-radius: 50px;
+  max-width:650px;
+  margin-top: 160px;
+  width:100%;
+  padding: 50px 100px;
+  text-align: left;
+  justify-content: center;
+  background: rgba(60, 60, 60, 0.4);
+
+}
+.btn{
+  border-radius:50px;
+  width: 170px;
+  background-color: #FFEA20;
+  color:white;
+  margin-top: 30px;
+  outline: none;
+}
+.btn:hover{
+  border-radius:50px;
+  background-color: white;
+  color:#FFEA20;
+  border: 1px solid #FFEA20;
+}

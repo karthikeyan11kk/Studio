@@ -1,0 +1,138 @@
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.navbar-toggler {
+  text-align: center;
+  background-color: #FFEA20;
+}
+.nav-link {
+  text-align: center;
+  color: #FFEA20;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.2rem;
+}
+.nav-link:hover {
+  color: #FFD717;
+}
+.nav-item {
+  margin-right: 20px;
+}
+.footer{
+  width:100%;
+  margin-top: 158px;
+  padding:27px;
+  background-color: #FFEA20;
+}
+.card
+{
+  border: 8px solid #FFEA20;
+  margin: auto;
+  border-radius: 50px;
+  max-width:1000px;
+  margin-top: 80px;
+  width:100%;
+  padding: 50px 100px;
+  text-align: left;
+  justify-content: center;
+}
+td{
+  padding-left: 30px;
+}
+.btn{
+  border-radius:50px;
+  width: 170px;
+  background-color: #FFEA20;
+  color:white;
+  margin-top: 30px;
+  outline: none;
+}
+.btn:hover{
+  border-radius:50px;
+  background-color: white;
+  color:#FFEA20;
+  border: 1px solid #FFEA20;
+}
+.btnn{
+  border-radius:50px;
+  width: 300px;
+  background-color: #FFEA20;
+  color:white;
+  padding:10px;
+  margin-top: 100px;
+  outline: none;
+  border: 1px solid #FFEA20;
+  font-size: 20px;
+}
+.btnn:hover{
+  border-radius:50px;
+  background-color: white;
+  color:#FFEA20;
+  border: 1px solid #FFEA20;
+}
+.hr {
+  width: 280px;
+  border-top: 10px solid #FFEA20;
+  border-bottom: none;
+}
+.heading{
+  margin-top: 60px;
+}
+.tab {
+  overflow: hidden;
+  margin-top: 50px;
+  border: 5px solid #FFEA20;
+  color: #FFEA20;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 57.2px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #FFEA20;
+  color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #FFEA20;
+  color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+}
+.imgcontainer{
+margin-top: 50px;
+}
+.scroll{
+  padding: 50px 0px;
+  overflow:scroll;
+  height:800px;
+  position: relative;
+  justify-content: center;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(400px,10px));
+  grid-column-gap:8px;
+  grid-row-gap: 10px;
+  overflow-x: hidden;
+}
+input.checkbox
+{
+  margin:10px;
+  position: absolute;
+  outline: 2px  solid #FFEA20;
+  outline-offset:none;
+  width: 20px;
+  height: 20px;
+}
