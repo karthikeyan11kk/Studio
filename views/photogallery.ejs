@@ -1,0 +1,146 @@
+<%- include("partial/galleryheader"); %>
+
+<center class="heading">
+<h1>PHOTO GALLERY</h1>
+<div class="hr"></div>
+</center>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Wedding')">Wedding</button>
+  <button class="tablinks" onclick="openCity(event, 'Puberty')">Puberty</button>
+  <button class="tablinks" onclick="openCity(event, 'Family')">Family</button>
+  <button class="tablinks" onclick="openCity(event, 'Function')">Function</button>
+  <button class="tablinks" onclick="openCity(event, 'BabyPhoto')">BabyPhoto</button>
+  <button class="tablinks" onclick="openCity(event, 'Personal')">Personal</button>
+  <button class="tablinks" onclick="openCity(event, 'Birthday')">Birthday/Party</button>
+</div>
+
+
+<div id="Wedding" class="tabcontent">
+  <center class="heading">
+    <h1>Wedding</h1>
+    <div class="hr"></div>
+  </center>
+  <div class="imgcontainer">
+    <div class="scroll">
+      <% for (var i = pic.length - 1; i >= 0; i--) {
+          var image = pic[i];
+          if (image.fields === "wedding") { %>
+                <img src="<%= image.url %>" height="250px" width="400px">
+      <%   }
+         } %>
+    </div>
+  </div>
+</div>
+
+
+  <div id="Puberty" class="tabcontent">
+    <center class="heading">
+    <h1>Puberty</h1>
+    <div class="hr"></div>
+    </center>
+    <div class="imgcontainer">
+      <div class="scroll">
+        <%pic.forEach(function(image){
+          if(image.fields==="puberty"){%>
+          <img src="<%=image.url%>" height="250px" width="400px">
+      <%}})%>
+      </div>
+      </div>
+    </div>
+
+
+    <div id="Family" class="tabcontent">
+      <center class="heading">
+      <h1>Family</h1>
+      <div class="hr"></div>
+      </center>
+      <div class="imgcontainer">
+        <div class="scroll">
+          <%pic.forEach(function(image){
+            if(image.fields==="family"){%>
+            <img src="<%=image.url%>" height="250px" width="400px">
+        <%}})%>
+        </div>
+        </div>
+      </div>
+
+      <div id="Function" class="tabcontent">
+        <center class="heading">
+        <h1>Functions</h1>
+        <div class="hr"></div>
+        </center>
+        <div class="imgcontainer">
+          <div class="scroll">
+            <%pic.forEach(function(image){
+              if(image.fields==="functions"){%>
+              <img src="<%=image.url%>" height="250px" width="400px">
+          <%}})%>
+          </div>
+          </div>
+        </div>
+        <div id="BabyPhoto" class="tabcontent">
+          <center class="heading">
+          <h1>BabyPhoto</h1>
+          <div class="hr"></div>
+          </center>
+          <div class="imgcontainer">
+            <div class="scroll">
+              <%pic.forEach(function(image){
+                if(image.fields==="baby"){%>
+                <img src="<%=image.url%>" height="250px" width="400px">
+ 
+            <%}})%>
+            </div>
+            </div>
+          </div>
+          <div id="Personal" class="tabcontent">
+            <center class="heading">
+            <h1>Personal</h1>
+            <div class="hr"></div>
+            </center>
+            <div class="imgcontainer">
+              <div class="scroll">
+                <%pic.forEach(function(image){
+                  if(image.fields==="personal"){%>
+                  <img src="<%=image.url%>" height="250px" width="400px">
+              <%}})%>
+              </div>
+              </div>
+            </div>
+            <div id="Birthday" class="tabcontent">
+              <center class="heading">
+              <h1>Birthday/Party</h1>
+              <div class="hr"></div>
+              </center>
+              <div class="imgcontainer">
+                <div class="scroll">
+                  <%pic.forEach(function(image){
+                    if(image.fields==="birthday"){%>
+                    <img src="<%=image.url%>" height="250px" width="400px">
+                <%}})%>
+                </div>
+                </div>
+              </div>
+             
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+

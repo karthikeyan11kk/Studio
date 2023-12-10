@@ -80,8 +80,12 @@ td{
 }
 .tab {
   overflow: hidden;
-  margin-top: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin:50px 150px 0px;
   border: 5px solid #FFEA20;
+  border-radius: 50px;
   color: #FFEA20;
 }
 
@@ -90,9 +94,8 @@ td{
   float: left;
   border: none;
   outline: none;
-  cursor: pointer;
-  padding: 15px 57.2px;
   transition: 0.3s;
+  padding: 15px 58px;
   font-size: 17px;
 }
 
@@ -113,12 +116,11 @@ td{
   display: none;
 }
 .imgcontainer{
-margin-top: 50px;
+  margin-top: 25px;
 }
 .scroll{
   padding: 50px 0px;
   overflow:scroll;
-  height:800px;
   position: relative;
   justify-content: center;
   display:grid;
@@ -135,4 +137,103 @@ input.checkbox
   outline-offset:none;
   width: 20px;
   height: 20px;
+}
+.book{
+  margin: 50px 100px;
+  border:5px solid #FFEA20;
+  padding: 20px;
+  border-radius: 50px;
+}
+.book button{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For screens up to 576px */
+@media screen and (max-width: 576px) {
+  .footer {
+    margin-top: 80px;
+    padding: 15px;
+  }
+  .tab {
+    margin: 30px 20px 0;
+    border-radius:0px;
+  }
+
+  .tab button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .card {
+    border-width: 5px;
+    margin-top: 40px;
+    padding: 30px;
+  }
+
+  .btn {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .heading {
+    margin-top: 40px;
+  }
+
+  .scroll {
+    padding: 30px 0;
+  }
+
+  .imgcontainer {
+    margin-top: 15px;
+  }
+
+  .book {
+    margin: 30px;
+    padding: 15px;
+  }
+}
+
+/* For screens from 577px to 768px */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .footer {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .card {
+    border-width: 6px;
+    margin-top: 60px;
+    padding: 40px;
+  }
+
+  .btn {
+    width: 170px;
+    margin-top: 25px;
+  }
+
+  .heading {
+    margin-top: 50px;
+  }
+  .tab {
+    margin: 40px 80px 0;
+    border-radius:0px;
+  }
+
+  .tab button {
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+  .scroll {
+    padding: 40px 0;
+  }
+
+  .imgcontainer {
+    margin-top: 20px;
+  }
+
+  .book {
+    margin: 40px 100px;
+    padding: 20px;
+  }
 }

@@ -1,2 +1,31 @@
 <%- include("partial/adminheader"); %>
-<%- include("partial/adminfooter"); %>
+
+<center class="heading">
+    <h1>BOOKED REQUEST</h1>
+    <div class="hr"></div>
+</center>
+
+<% for(let booked of book)
+{ %>
+<div class="book">
+    <div class="row">
+                <div class="col-lg-3">
+                      <h3>Customer name:</h3>
+                      <h6><%= booked.name %></h6>
+                </div>
+                <div class="col-lg-3">
+                      <h3>Customer phno:</h3>
+                      <h6><%= booked.phone %></h6>
+                </div>
+                <div class="col-lg-3">
+                      <h3>Customer email:</h3>
+                      <h6><%= booked.email %></h6>
+                </div>
+                  <div class="col-lg-3">
+                        <h3>Request for:</h3>
+                        <h6><%= booked.for %></h6>
+                  </div>
+                </div>
+
+</div>
+  <% } %>

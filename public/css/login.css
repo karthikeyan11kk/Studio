@@ -1,64 +1,153 @@
-@media  screen and (max-width: 600px) {
 
-}
-
-body{
+body {
   font-family: 'Lexend Deca', sans-serif;
-  background-image:url("../img/menuimg/camera.jpg");
+  background-image: url("../img/menuimg/camera.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-h1{
-  margin-bottom:40px;
-  color:#FFEA20;
-}
-h3{
-  margin-top:20px;
+
+h1 {
+  margin-bottom: 40px;
   color: #FFEA20;
 }
-hr{
-  margin-top:-5px;
+
+h3 {
+  margin-top: 20px;
+  color: #FFEA20;
+}
+
+hr {
+  margin-top: -5px;
   width: 150px;
   height: 15px;
-  background-color:#FFEA20;
+  background-color: #FFEA20;
   border-top: none;
 }
-input{
+
+input {
   width: 350px;
-  border-radius:50px;
-  color:  #FFEA20;
-  background-color:inherit;
+  border-radius: 50px;
+  color: #FFEA20;
+  background-color: inherit;
   padding: 5px 5px 5px 12px;
   outline: none;
-  border: 5px solid  #FFEA20;
+  border: 5px solid #FFEA20;
   margin-bottom: 10px;
 }
-.card
-{
+
+.card {
   border: 8px solid #FFEA20;
   margin: auto;
   border-radius: 50px;
-  max-width:650px;
+  max-width: 650px;
   margin-top: 160px;
-  width:100%;
+  width: 100%;
   padding: 50px 100px;
   text-align: left;
   justify-content: center;
   background: rgba(60, 60, 60, 0.4);
-
 }
-.btn{
-  border-radius:50px;
+
+.btn {
+  border-radius: 50px;
   width: 170px;
   background-color: #FFEA20;
-  color:white;
+  color: white;
   margin-top: 30px;
   outline: none;
 }
-.btn:hover{
-  border-radius:50px;
+
+.btn:hover {
+  border-radius: 50px;
   background-color: white;
-  color:#FFEA20;
+  color: #FFEA20;
   border: 1px solid #FFEA20;
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    background:none;
+    }
+
+  h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  h3 {
+    margin-top: 15px;
+    font-size: 18px;
+  }
+
+  hr {
+    margin-top: -3px;
+    width: 100px;
+    height: 10px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+  }
+
+  .card {
+    border-width: 5px;
+    margin-top: 100px;
+    padding: 30px;
+    background: none;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    font-family: 'Lexend Deca', sans-serif;
+    background:none;
+  }
+
+  h1 {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+
+  h3 {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+
+  hr {
+    margin-top: -2px;
+    width: 80px;
+    height: 8px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+  }
+
+  .card {
+    border-width: 4px;
+    margin-top: 80px;
+    padding: 20px;
+    background: none;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 160px;
+    margin-top: 16px;
+  }
 }
